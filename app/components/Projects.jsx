@@ -1,7 +1,7 @@
-import skysphere from "../../public/assets/projects/skysphere.jpg";
-import notewrite from "../../public/assets/projects/notewrite.jpg";
-import santazBlog from "../../public/assets/projects/santazBlog.jpg";
-import dataPulse from "../../public/assets/projects/dataPulse.jpg";
+import skysphereImg from "../../public/assets/projects/skysphere.jpg";
+import notewriteImg from "../../public/assets/projects/notewrite.jpg";
+import santazBlogImg from "../../public/assets/projects/santazBlog.jpg";
+import dataPulseImg from "../../public/assets/projects/dataPulse.jpg";
 import ProjectItem from "./ProjectItem";
 
 export default function Projects() {
@@ -13,25 +13,25 @@ export default function Projects() {
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
             title="DataPulse"
-            backgroundImg={dataPulse}
+            backgroundImg={dataPulseImg}
             projectUrl="/projectPages/dataPulse"
             stack="React Js"
           />
           <ProjectItem
             title="Skysphere"
-            backgroundImg={skysphere}
+            backgroundImg={skysphereImg}
             projectUrl="/projectPages/skysphere"
             stack="React Js"
           />
           <ProjectItem
             title="Notewrite"
-            backgroundImg={notewrite}
+            backgroundImg={notewriteImg}
             projectUrl="/projectPages/notewrite"
             stack="React Js"
           />
           <ProjectItem
             title="Santaz Blog"
-            backgroundImg={santazBlog}
+            backgroundImg={santazBlogImg}
             projectUrl="/projectPages/santazBlog"
             stack="Next Js"
           />
