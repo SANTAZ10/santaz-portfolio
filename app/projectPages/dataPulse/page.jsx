@@ -1,5 +1,5 @@
 import Image from "next/image";
-import dataPulse from "@/public/assets/projects/dataPulse.jpg";
+import dataPulse from "../../public/assets/projects/dataPulse.jpg";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 export default function datapulse() {
