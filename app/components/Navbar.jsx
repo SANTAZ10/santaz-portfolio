@@ -18,19 +18,16 @@ export default function Navbar() {
   const router = useRouter();
 
   useEffect(() => {
-    console.log("router.pathname:", router.pathname);
-  
+
     if (
       router.asPath === '/dataPulse' ||
       router.asPath === '/notewrite' ||
       router.asPath === '/santazBlog' ||
       router.asPath === '/skysphere'
     ) {
-      console.log("Setting nav to transparent");
       setNavBg('transparent');
       setLinkColor('#ecf0f3');
     } else {
-      console.log("Setting nav to default");
       setNavBg('#ecf0f3');
       setLinkColor('#1f2937');
     }

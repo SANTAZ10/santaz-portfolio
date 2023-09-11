@@ -1,7 +1,7 @@
-import skysphereImg from "@/public/assets/projects/skysphere.JPG";
-import notewriteImg from "@/public/assets/projects/notewrite.JPG";
-import santazBlogImg from "@/public/assets/projects/santazBlog.JPG";
-import dataPulseImg from "@/public/assets/projects/dataPulse.JPG";
+import skysphereImg from "@/public/assets/projects/skysphere.PNG";
+import notewriteImg from "@/public/assets/projects/notewrite.PNG";
+import santazBlogImg from "@/public/assets/projects/santazblog.PNG";
+import dataPulseImg from "@/public/assets/projects/datapulse.PNG";
 import ProjectItem from "./ProjectItem";
 
 export default function Projects() {

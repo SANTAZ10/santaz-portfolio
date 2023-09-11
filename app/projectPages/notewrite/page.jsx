@@ -1,5 +1,5 @@
 import Image from "next/image";
-import notewriteImg from "@/public/assets/projects/notewrite.JPG";
+import notewriteImg from "@/public/assets/projects/notewrite.PNG";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 export default function notewrite() {

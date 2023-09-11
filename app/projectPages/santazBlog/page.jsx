@@ -1,5 +1,5 @@
 import Image from "next/image";
-import santazBlogImg from "@/public/assets/projects/santazBlog.JPG";
+import santazBlogImg from "@/public/assets/projects/santazblog.PNG";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 export default function santazblog() {

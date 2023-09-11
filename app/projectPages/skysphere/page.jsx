@@ -1,5 +1,5 @@
 import Image from "next/image";
-import skysphereImg from "@/public/assets/projects/skysphere.JPG";
+import skysphereImg from "@/public/assets/projects/skysphere.PNG";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 export default function skysphere() {
