@@ -1,12 +1,25 @@
+"use client"
+
 import Image from "next/image";
 import { AiOutlineMail } from "react-icons/ai";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-
+import { useRef } from "react";
+import emailjs from "emailjs-com";
 import contactImg from "@/public/assets/contact.jpg";
 import Link from "next/link";
 export default function Contact() {
+
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm("service_u1szqsf", "template_asljoe9", form.current, "BLE0V5GYE3iYCfztt")
+    e.target.reset()
+  };
+
+
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
@@ -53,12 +66,13 @@ export default function Contact() {
           {/* right */}
           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-4">
-              <form>
+              <form ref={form} onSubmit={sendEmail}>
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
                     <label className="uppercase text-sm py-2">Name</label>
                     <input
                       type="text"
+                      name="name"
                       className="outline-none border-2 rounded-lg p-3 flex border-gray-300"
                     />
                   </div>
@@ -74,6 +88,7 @@ export default function Contact() {
                   <label className="uppercase text-sm py-2">Email</label>
                   <input
                     type="email"
+                    name="email"
                     className="outline-none border-2 rounded-lg p-3 flex border-gray-300"
                   />
                 </div>
@@ -81,6 +96,7 @@ export default function Contact() {
                   <label className="uppercase text-sm py-2">Subject</label>
                   <input
                     type="text"
+                    name="message"
                     className="outline-none border-2 rounded-lg p-3 flex border-gray-300"
                   />
                 </div>
@@ -88,6 +104,7 @@ export default function Contact() {
                   <label className="uppercase text-sm py-2">Message</label>
                   <textarea
                     type="text"
+                    name="message"
                     className="outline-none resize-none border-2 rounded-lg p-3 flex border-gray-300"
                     rows="10"
                   />

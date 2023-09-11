@@ -5,35 +5,30 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { useEffect, useState } from "react";
-import { useRouter } from 'next/navigation';
-
-
-
+import { useRouter } from "next/navigation";
+import { BsWhatsapp } from "react-icons/bs";
 
 export default function Navbar() {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState('#ecf0f3');
-  const [linkColor, setLinkColor] = useState('#1f2937')
+  const [navBg, setNavBg] = useState("#ecf0f3");
+  const [linkColor, setLinkColor] = useState("#1f2937");
   const router = useRouter();
 
   useEffect(() => {
-
     if (
-      router.asPath === '/dataPulse' ||
-      router.asPath === '/notewrite' ||
-      router.asPath === '/santazBlog' ||
-      router.asPath === '/skysphere'
+      router.asPath === "/dataPulse" ||
+      router.asPath === "/notewrite" ||
+      router.asPath === "/santazBlog" ||
+      router.asPath === "/skysphere"
     ) {
-      setNavBg('transparent');
-      setLinkColor('#ecf0f3');
+      setNavBg("transparent");
+      setLinkColor("#ecf0f3");
     } else {
-      setNavBg('#ecf0f3');
-      setLinkColor('#1f2937');
+      setNavBg("#ecf0f3");
+      setLinkColor("#1f2937");
     }
   }, [router]);
-  
-  
 
   const handleNav = () => {
     setNav(!nav);
@@ -54,13 +49,16 @@ export default function Navbar() {
     };
   });
   return (
-    <div style={{backgroundColor: `${navBg}`}} className={shadow ? "fixed w-full h-20 shadow-xl z-[100]" : "fixed w-full h-20 z-[100]"}>
+    <div
+      style={{ backgroundColor: `${navBg}` }}
+      className={shadow ? "fixed w-full h-20 shadow-xl z-[100]" : "fixed w-full h-20 z-[100]"}
+    >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href="/">
           <h2 className="text-emerald-800">SANTAZ</h2>
         </Link>
         <div>
-          <ul style={{color: `${linkColor}`}} className="hidden md:flex">
+          <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
             <li className="ml-10 text-sm uppercase hover:border-b">
               <Link href="/#home">Home</Link>
             </li>
@@ -73,7 +71,7 @@ export default function Navbar() {
             <li className="ml-10 text-sm uppercase hover:border-b">
               <Link href="/#projects">Projects</Link>
             </li>
-            
+
             <li className="ml-10 text-sm uppercase hover:border-b">
               <Link href="/#contact">Contact</Link>
             </li>
@@ -84,7 +82,10 @@ export default function Navbar() {
         </div>
       </div>
 
-      <div style={{backgroundColor: `${navBg}`}} className={nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""}>
+      <div
+        style={{ backgroundColor: `${navBg}` }}
+        className={nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""}
+      >
         <div
           className={
             nav
@@ -94,9 +95,8 @@ export default function Navbar() {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <Link href='/'>
-              
-              <h3 className="text-emerald-800">SANTAZ</h3>{" "}
+              <Link href="/">
+                <h3 className="text-emerald-800">SANTAZ</h3>{" "}
               </Link>
               <div
                 onClick={handleNav}
@@ -110,45 +110,58 @@ export default function Navbar() {
             </div>
 
             <div className="py-4 flex flex-col">
-              <ul style={{color: `${linkColor}`}} className="uppercase">
+              <ul style={{ color: `${linkColor}` }} className="uppercase">
                 <Link href="/#home">
-                  <li onClick={() => setNav(false)} className="py-4 text-sm">Home</li>
+                  <li onClick={() => setNav(false)} className="py-4 text-sm">
+                    Home
+                  </li>
                 </Link>
                 <Link href="/#about">
-                  <li onClick={() => setNav(false)} className="py-4 text-sm">About</li>
+                  <li onClick={() => setNav(false)} className="py-4 text-sm">
+                    About
+                  </li>
                 </Link>
                 <Link href="/#skills">
-                  <li onClick={() => setNav(false)} className="py-4 text-sm">Skills</li>
+                  <li onClick={() => setNav(false)} className="py-4 text-sm">
+                    Skills
+                  </li>
                 </Link>
                 <Link href="/#projects">
-                  <li onClick={() => setNav(false)} className="py-4 text-sm">Projects</li>
+                  <li onClick={() => setNav(false)} className="py-4 text-sm">
+                    Projects
+                  </li>
                 </Link>
-              
+
                 <Link href="/#contact">
-                  <li onClick={() => setNav(false)} className="py-4 text-sm">Contact</li>
+                  <li onClick={() => setNav(false)} className="py-4 text-sm">
+                    Contact
+                  </li>
                 </Link>
               </ul>
               <div className="py-10">
                 <p className="uppercase tracking-widest text-[#5651e5]">Let&#39;s Connect</p>
                 <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                  <Link href="/">
+                  <Link href="mailto:fagbolasamuel.sf@gmail.com" target={"blank"}>
                     <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                       <AiOutlineMail />
                     </div>
                   </Link>
-                  <Link href="/">
+                  <Link target="_blank"
+                    href="https://www.linkedin.com/in/samuel-fagbola-21045b1b3/"
+                  >
                     <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                       <FaLinkedin />
                     </div>
                   </Link>
-                  <Link href="/">
+                  <Link target="_blank"
+                    href="https://github.com/SANTAZ10">
                     <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                       <FaGithub />
                     </div>
                   </Link>
-                  <Link href="/">
+                  <Link href="https://wa.me/+2348111211953" target={"blank"}>
                     <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                      <BsFillPersonLinesFill />
+                      <BsWhatsapp />
                     </div>
                   </Link>
                 </div>

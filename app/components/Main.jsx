@@ -1,6 +1,8 @@
+import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { BsWhatsapp } from "react-icons/bs";
 
 export default function Main() {
   return (
@@ -19,18 +21,29 @@ export default function Main() {
             Aspiring to master backend tech and delve into blockchain development.
           </p>
           <div className="flex max-w-[330px] items-center justify-between m-auto py-4">
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <FaLinkedin />
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <FaGithub />
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <AiOutlineMail />
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <BsFillPersonLinesFill />
-            </div>
+          <Link href="mailto:fagbolasamuel.sf@gmail.com" target={"blank"}>
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                      <AiOutlineMail />
+                    </div>
+                  </Link>
+                  <Link target="_blank"
+                    href="https://www.linkedin.com/in/samuel-fagbola-21045b1b3/"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                      <FaLinkedin />
+                    </div>
+                  </Link>
+                  <Link target="_blank"
+                    href="https://github.com/SANTAZ10">
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                      <FaGithub />
+                    </div>
+                  </Link>
+                  <Link href="https://wa.me/+2348111211953" target={"blank"}>
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                      <BsWhatsapp />
+                    </div>
+                  </Link>
           </div>
         </div>
       </div>
