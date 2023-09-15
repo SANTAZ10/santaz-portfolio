@@ -25,11 +25,7 @@ export default function notewrite() {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aperiam nam eum placeat
-            earum est autem vero maxime, perferendis enim magni neque modi iusto doloribus, culpa
-            vitae odio temporibus deleniti tempore. Nemo ipsa distinctio officia quae odit totam
-            ipsum nisi a repudiandae quisquam? Culpa iste vel ullam voluptates praesentium
-            cupiditate?
+          I designed and developed a straightforward yet efficient notes application using ReactJS. The primary goal of this project was to provide users with a user-friendly interface for jotting down and saving notes. What sets this app apart is its capability to persist notes in local storage, ensuring that users' data remains intact even after a page refresh or when returning to the app.
           </p>
           <a href="https://notewrite.netlify.app/" target="_blank">
             <button className="px-8 py-2 mt-4 mr-8">Demo</button>

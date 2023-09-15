@@ -25,11 +25,7 @@ export default function santazblog() {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aperiam nam eum placeat
-            earum est autem vero maxime, perferendis enim magni neque modi iusto doloribus, culpa
-            vitae odio temporibus deleniti tempore. Nemo ipsa distinctio officia quae odit totam
-            ipsum nisi a repudiandae quisquam? Culpa iste vel ullam voluptates praesentium
-            cupiditate?
+          I conceptualized and developed a dynamic and user-friendly blog website using Next.js as the frontend framework, Tailwind CSS for styling, and Sanity as the content management system (CMS). This project was designed to offer users a seamless experience in both reading and creating blog content. The integration with Sanity's content studio enables writers to easily compose and manage blog posts, with changes immediately reflected on the website.
           </p>
           <a href="https://santazblog.vercel.app" target="_blank">
             <button className="px-8 py-2 mt-4 mr-8">Demo</button>

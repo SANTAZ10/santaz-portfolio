@@ -25,11 +25,7 @@ export default function skysphere() {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aperiam nam eum placeat
-            earum est autem vero maxime, perferendis enim magni neque modi iusto doloribus, culpa
-            vitae odio temporibus deleniti tempore. Nemo ipsa distinctio officia quae odit totam
-            ipsum nisi a repudiandae quisquam? Culpa iste vel ullam voluptates praesentium
-            cupiditate?b
+          I designed and developed a user-friendly weather application using ReactJS as the frontend framework, Tailwind CSS for styling, and the OpenWeather API to fetch real-time weather data. This project was aimed at providing users with a seamless and informative experience for checking weather conditions in various locations around the world.
           </p>
           <a href="https://skysphere.netlify.app" target="_blank">
             <button className="px-8 py-2 mt-4 mr-8">Demo</button>
